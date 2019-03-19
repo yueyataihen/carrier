@@ -22,10 +22,21 @@
                     <Icon type="ios-paper"></Icon>
                     评估中心
                 </Menu-item>
-                <Menu-item name="5">
+                <Submenu name="5">
+		            <template slot="title">
+		                <Icon type="ios-paper" />
+		                配置中心
+		            </template>
+		            <MenuGroup>
+		                <MenuItem name="3-1">新增和启动</MenuItem>
+		                <MenuItem name="3-2">活跃分析</MenuItem>
+		                <MenuItem name="3-3">时段分析</MenuItem>
+		            </MenuGroup>
+		        </Submenu>
+               <!--  <Menu-item name="5">
                     <Icon type="ios-paper"></Icon>
                     配置中心
-                </Menu-item>
+                </Menu-item> -->
             </div>
         </Menu>
     </header>
@@ -52,7 +63,7 @@ export default {
 
 <style scoped>
 .ivu-menu-dark {
-    background: #0085d0;
+    background: rgb(8, 30, 51);
 }
 .ivu-menu {
 	padding: 0 20px;
